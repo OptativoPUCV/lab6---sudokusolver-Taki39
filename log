@@ -14,3 +14,21 @@ Thu 04 May 2023 02:49:34 PM UTC:
  tests:  2|4
 total_score: 15/70
 7814628
+Thu 04 May 2023 03:33:04 PM UTC: 
+ sudoku.c | 24 +++++++++++++++++++++---
+ 1 file changed, 21 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:55:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   55 |   int i,j;
+      |         ^
+sudoku.c: In function ‘iniciarArray’:
+sudoku.c:50:15: error: array subscript 10 is outside array bounds of ‘int[10]’ [-Werror=array-bounds]
+   50 |   return array[10];
+      |          ~~~~~^~~~
+sudoku.c:46:22: note: while referencing ‘array’
+   46 | int iniciarArray(int array[10])
+      |                  ~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f19d5fe
