@@ -47,7 +47,7 @@ int iniciarArray(int array[10])
 {
   for(int a=0 ;a<10;a++)
     array[a]=0;
-  return array[10];
+  return array;
 }
 
 int is_valid(Node* n)

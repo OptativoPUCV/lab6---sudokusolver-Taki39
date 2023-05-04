@@ -46,3 +46,14 @@ sudoku.c:46:22: note: while referencing ‘array’
 cc1: all warnings being treated as errors
 Compilation failed
 14416d5
+Thu 04 May 2023 03:37:23 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘iniciarArray’:
+sudoku.c:50:10: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Werror=int-conversion]
+   50 |   return array;
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ef50167
