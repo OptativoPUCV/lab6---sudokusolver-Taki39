@@ -58,9 +58,20 @@ int is_valid(Node* n)
   iniciarArray(columnas);
   iniciarArray(subMatriz);
   
-  for (i=0; i<9;i++)
+  for (i=0; i<9; i++)
     {
-      
+      iniciarArray(filas);
+      iniciarArray(columnas);
+      iniciarArray(subMatriz);
+      for(j=0; j<9; j++)
+        {
+          int x = n->sudo[i][j];
+          int y = n->sudo[j][i];
+          if(filas[x] || columnas[y]) return 0;
+          x=1;
+          y=1;
+          
+        }
     }
   
   return 1;
