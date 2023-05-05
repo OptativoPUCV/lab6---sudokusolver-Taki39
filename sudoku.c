@@ -120,12 +120,20 @@ List* get_adj_nodes(Node* n)
                 Node* adj_node = createNode();
                 adj_node = copy(n);
                 adj_node->sudo[i][j] = k;
-                pushBack(list, adj_node);
+                if (is_valid(adj_node))
+                {
+                  pushBack(list, adj_node);
+                }
+                else
+                {
+                  free(adj_node);
+                }
               }
+            return list;
           }
         }
     }
-  return list;
+  return NULL;
 }
 
 
