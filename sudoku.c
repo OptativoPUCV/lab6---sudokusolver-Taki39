@@ -85,7 +85,7 @@ int is_valid(Node* n)
         {
           for(int l = 3 * (k%3); l < 3 * (k%3) + 3; l++)
             {
-              int num = n->sudo[i][j];
+              int num = n->sudo[h][l];
               if(num!=0)
               {
                 if(subMatriz[num] == 1)
