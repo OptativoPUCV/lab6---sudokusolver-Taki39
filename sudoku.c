@@ -129,11 +129,10 @@ List* get_adj_nodes(Node* n)
                   free(adj_node);
                 }
               }
-            return list;
           }
         }
     }
-  return NULL;
+  return list;
 }
 
 
