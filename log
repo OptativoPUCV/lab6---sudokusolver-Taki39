@@ -74,3 +74,17 @@ sudoku.c:56:34: error: unused variable ‘subMatriz’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f729f06
+Fri 05 May 2023 12:32:43 PM UTC: 
+ sudoku.c | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:88:35: error: array subscript 9 is above array bounds of ‘int[9]’ [-Werror=array-bounds]
+   88 |               int num = n->sudo[i][j];
+      |                         ~~~~~~~~~~^~~
+sudoku.c:7:8: note: while referencing ‘sudo’
+    7 |    int sudo[9][9];
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6807c1b

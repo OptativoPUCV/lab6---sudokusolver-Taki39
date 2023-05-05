@@ -50,6 +50,7 @@ int iniciarArray(int array[10])
   return *array;
 }
 
+//separar en 3 funciones mas pequeñas
 int is_valid(Node* n)
 {
   int i,j;
@@ -76,7 +77,29 @@ int is_valid(Node* n)
         }
       }
     }
-  
+
+  for(int k=0; k<9; k++)
+    {
+      iniciarArray(subMatriz);
+      for(int h = 3 * (k/3); h < 3 * (k/3) + 3; h++)
+        {
+          for(int l = 3 * (k%3); l < 3 * (k%3) + 3; l++)
+            {
+              int num = n->sudo[i][j];
+              if(num!=0)
+              {
+                if(subMatriz[num] == 1)
+                {
+                  return 0;
+                }
+                else
+                {
+                  subMatriz[num] = 1;
+                }
+              }
+            }
+        }
+    }
   
   return 1;
 }
