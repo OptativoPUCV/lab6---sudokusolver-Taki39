@@ -108,14 +108,13 @@ int is_valid(Node* n)
 List* get_adj_nodes(Node* n)
 {
   List* list=createList();
-  int i,j,k;
-  for (i=0 ; i<9 ; i++)
+  for (int i=0 ; i<9 ; i++)
     {
-      for(j=0 ; j<9 ; j++)
+      for(int j=0 ; j<9 ; j++)
         {
           if (n->sudo[i][j]==0)
           {
-            for(k = 1; k<9 ; k++)
+            for(int k = 1; k<=9 ; k++)
               {
                 Node* adj_node = createNode();
                 adj_node = copy(n);
@@ -149,7 +148,9 @@ int is_final(Node* n)
   return 1;
 }
 
-Node* DFS(Node* initial, int* cont){
+Node* DFS(Node* initial, int* cont)
+{
+  
   return NULL;
 }
 
