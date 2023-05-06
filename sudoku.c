@@ -53,14 +53,13 @@ int iniciarArray(int array[10])
 //separar en 3 funciones mas pequeñas
 int is_valid(Node* n)
 {
-  int i,j;
   int filas[10] , columnas[10] , subMatriz[10];
   
-  for (i=0; i<9; i++)
+  for (int i=0; i<9; i++)
     {
       iniciarArray(filas);
       iniciarArray(columnas);
-      for(j=0; j<9; j++)
+      for(int j=0; j<9; j++)
       {
         int num = n->sudo[i][j];
         if(num != 0)
