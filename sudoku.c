@@ -170,8 +170,8 @@ Node* DFS(Node* initial, int* cont)
       push(stack,adj_node);
       adj_node = next(adj_nodes);
     } 
-    free(n);
-    free(adj_nodes);
+    //free(n);
+    //free(adj_nodes);
   }
   
   

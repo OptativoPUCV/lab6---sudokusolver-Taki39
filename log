@@ -186,3 +186,13 @@ sudoku.c:157:15: error: void value not ignored as it ought to be
       |               ^~~
 Compilation failed
 e35f9a2
+Sun 07 May 2023 01:17:46 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:157:15: error: void value not ignored as it ought to be
+  157 |     Node* n = pop(stack);
+      |               ^~~
+Compilation failed
+bf08df2
