@@ -167,21 +167,13 @@ Node* DFS(Node* initial, int* cont)
     List* adj_nodes = get_adj_nodes(n);
     Node* adj_node = first(adj_nodes);
 
-    int tiene_adj_nodes = 0;
-
     while(adj_node != NULL)
     {
       push(stack,adj_node);
       adj_node = next(adj_nodes);
-      tiene_adj_nodes = 1;
     } 
     free(n);
     free(adj_nodes);
-
-    if(!tiene_adj_nodes)
-    {
-      break;
-    }
   }
   free(stack);
   return NULL;
