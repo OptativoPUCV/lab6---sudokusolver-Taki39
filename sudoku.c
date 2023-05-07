@@ -186,7 +186,7 @@ Node* DFS(Node* initial, int* cont)
 
     if(!tieneNodoValido)
     {
-      break;
+      return NULL;
     }
     
   }
