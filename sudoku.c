@@ -171,7 +171,7 @@ Node* DFS(Node* initial, int* cont)
       adj_node = next(adj_nodes);
     } 
     free(n);
-    free(adj_nodes;)
+    free(adj_nodes);
   }
   
   
