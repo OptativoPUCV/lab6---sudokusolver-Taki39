@@ -160,7 +160,7 @@ Node* DFS(Node* initial, int* cont)
 
     if(is_final(n))
     {
-      return n;
+      return NULL;
     }    
 
     List* adj_nodes = get_adj_nodes(n);
