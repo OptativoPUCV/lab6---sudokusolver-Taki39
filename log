@@ -156,3 +156,23 @@ sudoku.c:157:13: error: unused variable ‘n’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 57ec0c7
+Sun 07 May 2023 01:15:36 AM UTC: 
+ sudoku.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:157:15: error: void value not ignored as it ought to be
+  157 |     Node* n = pop(stack);
+      |               ^~~
+sudoku.c:174:19: error: expected ‘)’ before ‘;’ token
+  174 |     free(adj_nodes;)
+      |         ~         ^
+      |                   )
+sudoku.c:174:21: error: expected ‘;’ before ‘}’ token
+  174 |     free(adj_nodes;)
+      |                     ^
+      |                     ;
+  175 |   }
+      |   ~                  
+Compilation failed
+22bbdfa
