@@ -173,6 +173,7 @@ Node* DFS(Node* initial, int* cont)
     } 
     free(n);
     free(adj_nodes);
+    return NULL;
   }
   free(stack);
   return NULL;
