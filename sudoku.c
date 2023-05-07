@@ -169,7 +169,13 @@ Node* DFS(Node* initial, int* cont)
 
     while(adj_node != NULL)
     {
-      push(stack,adj_node);
+      if (is_valid(adj_node))
+      {
+        push(stack,adj_node);
+      }
+      else{
+        free(adj_node);
+      }
       adj_node = next(adj_nodes);
     } 
     free(n);
