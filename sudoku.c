@@ -160,6 +160,7 @@ Node* DFS(Node* initial, int* cont)
 
     if(is_final(n))
     {
+      free(stack);
       return n;
     }    
 
