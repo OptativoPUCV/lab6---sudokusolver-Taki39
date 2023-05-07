@@ -167,11 +167,14 @@ Node* DFS(Node* initial, int* cont)
     List* adj_nodes = get_adj_nodes(n);
     Node* adj_node = first(adj_nodes);
 
+    int tieneNodoValido = 0;
+
     while(adj_node != NULL)
     {
       if (is_valid(adj_node))
       {
         push(stack,adj_node);
+        tieneNodoValido = 1;
       }
       else{
         free(adj_node);
@@ -180,6 +183,12 @@ Node* DFS(Node* initial, int* cont)
     } 
     free(n);
     free(adj_nodes);
+
+    if(!tieneNodoValido)
+    {
+      break;
+    }
+    
   }
   free(stack);
   return NULL;
